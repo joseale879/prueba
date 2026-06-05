@@ -3,20 +3,20 @@ import { Platform, StyleSheet } from 'react-native';
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f7ff',
+    backgroundColor: '#f7faf4',
   },
   listContent: {
     padding: 16,
     paddingBottom: 28,
   },
   heroCard: {
-    backgroundColor: '#111827',
+    backgroundColor: '#7cb342',
     borderRadius: 24,
     padding: 20,
     marginBottom: 16,
   },
   kicker: {
-    color: '#a5b4fc',
+    color: 'rgba(255,255,255,0.9)',
     fontSize: 12,
     fontWeight: '700',
     letterSpacing: 1.2,
@@ -31,7 +31,7 @@ export default StyleSheet.create({
     marginBottom: 10,
   },
   subtitle: {
-    color: '#c7d2fe',
+    color: 'rgba(255,255,255,0.92)',
     fontSize: 15,
     lineHeight: 22,
   },
@@ -41,7 +41,7 @@ export default StyleSheet.create({
     padding: 16,
     marginBottom: 14,
     borderWidth: 1,
-    borderColor: '#e5e7eb',
+    borderColor: '#d9e4cf',
     ...Platform.select({
       ios: {
         shadowColor: '#111827',
@@ -64,20 +64,20 @@ export default StyleSheet.create({
     marginBottom: 12,
   },
   actionButton: {
-    backgroundColor: '#eef2ff',
+    backgroundColor: '#f3f8ed',
     borderRadius: 18,
     paddingVertical: 14,
     paddingHorizontal: 16,
     marginBottom: 10,
     borderWidth: 1,
-    borderColor: '#c7d2fe',
+    borderColor: '#d9e4cf',
   },
   actionButtonPressed: {
     transform: [{ scale: 0.98 }],
     opacity: 0.95,
   },
   actionButtonText: {
-    color: '#1e1b4b',
+    color: '#111827',
     fontSize: 16,
     fontWeight: '800',
   },
@@ -93,7 +93,7 @@ export default StyleSheet.create({
     fontWeight: '600',
   },
   primaryButton: {
-    backgroundColor: '#4f46e5',
+    backgroundColor: '#7cb342',
     borderRadius: 18,
     paddingVertical: 14,
     alignItems: 'center',
@@ -117,7 +117,7 @@ export default StyleSheet.create({
     borderRadius: 18,
     padding: 14,
     borderWidth: 1,
-    borderColor: '#e5e7eb',
+    borderColor: '#d9e4cf',
     marginBottom: 10,
   },
   listItemTitle: {
@@ -170,7 +170,7 @@ export default StyleSheet.create({
     justifyContent: 'flex-end',
   },
   secondaryButton: {
-    backgroundColor: '#e5e7eb',
+    backgroundColor: '#e5ebdf',
     borderRadius: 14,
     paddingHorizontal: 18,
     paddingVertical: 12,

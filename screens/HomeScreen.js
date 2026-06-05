@@ -14,7 +14,7 @@ const PAGE_SIZE = 8;
 const MAX_ITEMS = 32;
 
 export default function HomeScreen({ navigation }) {
-  const [message, setMessage] = useState('Presiona un botón para empezar');
+  const [message, setMessage] = useState('Presiona un boton para empezar');
   const [modalVisible, setModalVisible] = useState(false);
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -56,9 +56,9 @@ export default function HomeScreen({ navigation }) {
     },
     {
       label: 'Abrir modal',
-      description: 'Muestra un cuadro de diálogo',
+      description: 'Muestra un cuadro de dialogo',
       onPress: () => {
-        setMessage('Se abrió el modal');
+        setMessage('Se abrio el modal');
         setModalVisible(true);
       },
     },
@@ -67,7 +67,7 @@ export default function HomeScreen({ navigation }) {
       description: 'Navega a la pantalla Detalle',
       onPress: () => {
         setMessage('Navegando a Detalle...');
-        navigation.navigate('Detalle');
+        navigation.navigate('Detail');
       },
     },
   ];
@@ -82,10 +82,10 @@ export default function HomeScreen({ navigation }) {
         ListHeaderComponent={
           <View>
             <View style={styles.heroCard}>
-              <Text style={styles.kicker}>Guía Expo / React Native</Text>
-              <Text style={styles.title}>Componentes básicos y navegación</Text>
+              <Text style={styles.kicker}>Guia Expo / React Native</Text>
+              <Text style={styles.title}>Componentes basicos y navegacion</Text>
               <Text style={styles.subtitle}>
-                Esta pantalla reúne botones, modal y lista con carga para evidenciar la actividad.
+                Esta pantalla reune botones, modal y lista con carga para evidenciar la actividad.
               </Text>
             </View>
 
@@ -120,7 +120,7 @@ export default function HomeScreen({ navigation }) {
             <View style={styles.card}>
               <Text style={styles.sectionTitle}>Scroll Loading</Text>
               <Text style={styles.helperText}>
-                Desliza hacia abajo para cargar más elementos con FlatList.
+                Desliza hacia abajo para cargar mas elementos con FlatList.
               </Text>
             </View>
           </View>
@@ -135,12 +135,12 @@ export default function HomeScreen({ navigation }) {
           <View style={styles.footer}>
             {loading ? (
               <>
-                <ActivityIndicator size="small" color="#4f46e5" />
-                <Text style={styles.footerText}>Cargando más elementos...</Text>
+                <ActivityIndicator size="small" color="#7cb342" />
+                <Text style={styles.footerText}>Cargando mas elementos...</Text>
               </>
             ) : (
               <Text style={styles.footerText}>
-                {items.length >= MAX_ITEMS ? 'No hay más elementos por cargar' : 'Toca más abajo para continuar'}
+                {items.length >= MAX_ITEMS ? 'No hay mas elementos por cargar' : 'Toca mas abajo para continuar'}
               </Text>
             )}
           </View>

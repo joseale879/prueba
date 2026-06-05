@@ -12,32 +12,21 @@ const theme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    primary: '#4f46e5',
-    background: '#f5f7ff',
+    primary: '#7cb342',
+    background: '#f7faf4',
     card: '#ffffff',
     text: '#111827',
-    border: '#e5e7eb',
+    border: '#d9e4cf',
   },
 };
 
 export default function App() {
-  const [currentRoute, setCurrentRoute] = React.useState('Inicio');
-
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaProvider>
         <StatusBar style="light" backgroundColor="#111827" />
-        <NavigationContainer
-          ref={navigationRef}
-          theme={theme}
-          onReady={() => {
-            setCurrentRoute(navigationRef.getCurrentRoute()?.name || 'Inicio');
-          }}
-          onStateChange={() => {
-            setCurrentRoute(navigationRef.getCurrentRoute()?.name || 'Inicio');
-          }}
-        >
-          <AppNavigator navigationRef={navigationRef} currentRoute={currentRoute} />
+        <NavigationContainer ref={navigationRef} theme={theme}>
+          <AppNavigator navigationRef={navigationRef} />
         </NavigationContainer>
       </SafeAreaProvider>
     </GestureHandlerRootView>

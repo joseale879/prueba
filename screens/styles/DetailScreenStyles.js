@@ -3,7 +3,7 @@ import { Platform, StyleSheet } from 'react-native';
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f7ff',
+    backgroundColor: '#f7faf4',
     padding: 16,
   },
   card: {
@@ -11,7 +11,7 @@ export default StyleSheet.create({
     borderRadius: 24,
     padding: 18,
     borderWidth: 1,
-    borderColor: '#e5e7eb',
+    borderColor: '#d9e4cf',
     ...Platform.select({
       ios: {
         shadowColor: '#111827',
@@ -28,7 +28,7 @@ export default StyleSheet.create({
     }),
   },
   kicker: {
-    color: '#4f46e5',
+    color: '#7cb342',
     fontSize: 12,
     fontWeight: '800',
     letterSpacing: 1.2,
@@ -49,7 +49,7 @@ export default StyleSheet.create({
     marginBottom: 14,
   },
   list: {
-    backgroundColor: '#f8fafc',
+    backgroundColor: '#f3f8ed',
     borderRadius: 18,
     padding: 14,
     marginBottom: 18,

@@ -9,13 +9,13 @@ export default function DetailScreen({ navigation }) {
         <Text style={styles.kicker}>Stack Navigation</Text>
         <Text style={styles.title}>Pantalla de detalle</Text>
         <Text style={styles.message}>
-          Esta pantalla sirve para demostrar navegación entre vistas dentro del Stack y retorno con el botón de volver.
+          Esta pantalla sirve para demostrar navegacion entre vistas dentro del Stack y retorno con el boton de volver.
         </Text>
 
         <View style={styles.list}>
-          <Text style={styles.listItem}>• Ruta accesible desde Home</Text>
-          <Text style={styles.listItem}>• Retorno con goBack()</Text>
-          <Text style={styles.listItem}>• Compatible con Android, iOS y web</Text>
+          <Text style={styles.listItem}>- Ruta accesible desde Home</Text>
+          <Text style={styles.listItem}>- Retorno con goBack()</Text>
+          <Text style={styles.listItem}>- Compatible con Android, iOS y web</Text>
         </View>
 
         <Pressable
@@ -25,7 +25,7 @@ export default function DetailScreen({ navigation }) {
               return;
             }
 
-            navigation.navigate('Inicio');
+            navigation.navigate('Home');
           }}
           style={({ pressed }) => [styles.primaryButton, pressed && styles.primaryButtonPressed]}
         >

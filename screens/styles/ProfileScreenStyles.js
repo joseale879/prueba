@@ -3,7 +3,7 @@ import { Platform, StyleSheet } from 'react-native';
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f7ff',
+    backgroundColor: '#f7faf4',
     padding: 16,
   },
   card: {
@@ -11,7 +11,7 @@ export default StyleSheet.create({
     borderRadius: 24,
     padding: 18,
     borderWidth: 1,
-    borderColor: '#e5e7eb',
+    borderColor: '#d9e4cf',
     ...Platform.select({
       ios: {
         shadowColor: '#111827',
@@ -28,7 +28,7 @@ export default StyleSheet.create({
     }),
   },
   kicker: {
-    color: '#4f46e5',
+    color: '#7cb342',
     fontSize: 12,
     fontWeight: '800',
     letterSpacing: 1.2,
@@ -56,10 +56,10 @@ export default StyleSheet.create({
   },
   pickerWrapper: {
     borderWidth: 1,
-    borderColor: '#c7d2fe',
+    borderColor: '#d9e4cf',
     borderRadius: 18,
     overflow: 'hidden',
-    backgroundColor: '#eef2ff',
+    backgroundColor: '#f3f8ed',
   },
   picker: {
     width: '100%',
@@ -68,9 +68,9 @@ export default StyleSheet.create({
   dropdownTrigger: {
     minHeight: 52,
     borderWidth: 1,
-    borderColor: '#c7d2fe',
+    borderColor: '#d9e4cf',
     borderRadius: 18,
-    backgroundColor: '#eef2ff',
+    backgroundColor: '#f3f8ed',
     paddingHorizontal: 16,
     flexDirection: 'row',
     alignItems: 'center',
@@ -87,7 +87,7 @@ export default StyleSheet.create({
     paddingRight: 12,
   },
   dropdownChevron: {
-    color: '#4f46e5',
+    color: '#7cb342',
     fontSize: 18,
     fontWeight: '800',
     marginLeft: 12,
@@ -117,7 +117,7 @@ export default StyleSheet.create({
     opacity: 0.85,
   },
   dropdownOptionSelected: {
-    backgroundColor: '#dbeafe',
+    backgroundColor: '#e7f3d7',
   },
   dropdownOptionText: {
     color: '#111827',
@@ -125,13 +125,13 @@ export default StyleSheet.create({
     fontWeight: '600',
   },
   dropdownOptionTextSelected: {
-    color: '#1d4ed8',
+    color: '#5f8f2f',
   },
   dropdownDoneButton: {
     marginTop: 8,
     minHeight: 46,
     borderRadius: 14,
-    backgroundColor: '#4f46e5',
+    backgroundColor: '#7cb342',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -147,10 +147,10 @@ export default StyleSheet.create({
     marginTop: 18,
     padding: 16,
     borderRadius: 18,
-    backgroundColor: '#111827',
+    backgroundColor: '#7cb342',
   },
   selectionLabel: {
-    color: '#a5b4fc',
+    color: 'rgba(255,255,255,0.9)',
     fontSize: 12,
     fontWeight: '700',
     textTransform: 'uppercase',

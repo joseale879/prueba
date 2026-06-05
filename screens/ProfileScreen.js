@@ -32,10 +32,10 @@ export default function ProfileScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.card}>
-        <Text style={styles.kicker}>Lenguajes</Text>
-        <Text style={styles.title}>Selecciona un lenguaje</Text>
+        <Text style={styles.kicker}>Perfil</Text>
+        <Text style={styles.title}>Elige tus preferencias</Text>
         <Text style={styles.subtitle}>
-          Android usa un menu desplegable y iOS usa el Picker nativo.
+          Selecciona un lenguaje favorito en este perfil de usuario.
         </Text>
 
         <Text style={styles.label}>Selecciona una opcion</Text>

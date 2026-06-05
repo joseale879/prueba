@@ -3,14 +3,14 @@ import { Platform, StyleSheet } from 'react-native';
 export default StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: '#f5f7ff',
+    backgroundColor: '#f7faf4',
   },
   avoidingView: {
     flex: 1,
   },
   container: {
     flex: 1,
-    backgroundColor: '#f5f7ff',
+    backgroundColor: '#f7faf4',
     paddingHorizontal: 16,
   },
   scrollContent: {
@@ -23,7 +23,7 @@ export default StyleSheet.create({
     borderRadius: 24,
     padding: 18,
     borderWidth: 1,
-    borderColor: '#e5e7eb',
+    borderColor: '#d9e4cf',
     ...Platform.select({
       ios: {
         shadowColor: '#111827',
@@ -40,7 +40,7 @@ export default StyleSheet.create({
     }),
   },
   kicker: {
-    color: '#4f46e5',
+    color: '#7cb342',
     fontSize: 12,
     fontWeight: '800',
     letterSpacing: 1.2,
@@ -63,7 +63,7 @@ export default StyleSheet.create({
   input: {
     backgroundColor: '#f8fafc',
     borderWidth: 1,
-    borderColor: '#cbd5e1',
+    borderColor: '#d9e4cf',
     borderRadius: 16,
     paddingHorizontal: 14,
     paddingVertical: Platform.OS === 'ios' ? 14 : 12,
@@ -91,16 +91,16 @@ export default StyleSheet.create({
     transform: [{ scale: 0.98 }],
   },
   sumButton: {
-    backgroundColor: '#dbeafe',
+    backgroundColor: '#edf7e2',
   },
   restButton: {
-    backgroundColor: '#ede9fe',
+    backgroundColor: '#f2f6e8',
   },
   mulButton: {
-    backgroundColor: '#dcfce7',
+    backgroundColor: '#e7f3d7',
   },
   divButton: {
-    backgroundColor: '#fee2e2',
+    backgroundColor: '#fdf0d7',
   },
   opSymbol: {
     color: '#111827',
@@ -117,12 +117,12 @@ export default StyleSheet.create({
   },
   resultBox: {
     marginTop: 8,
-    backgroundColor: '#111827',
+    backgroundColor: '#7cb342',
     borderRadius: 18,
     padding: 16,
   },
   resultLabel: {
-    color: '#a5b4fc',
+    color: 'rgba(255,255,255,0.9)',
     fontSize: 12,
     fontWeight: '700',
     textTransform: 'uppercase',
